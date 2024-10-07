@@ -31,8 +31,8 @@ public class EmployeeController {
 		ServiceLayer.UpdateEmployee(entity);
 		return "Employee Updated SuccessFully";
 	}
-	@GetMapping("/api/Student_display/{Enmployee_id}")
-	public Employee StudentDisplay(@PathVariable int Employee_id) {
+	@GetMapping("/api/Employee_display/{Employee_id}")
+	public Employee EmployeeDisplay(@PathVariable int Employee_id) {
 		return ServiceLayer.getEmployee(Employee_id);
 	}
 	@GetMapping("/api/getAllEmp")
